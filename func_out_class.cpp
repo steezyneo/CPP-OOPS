@@ -5,17 +5,17 @@ using namespace std;
 
 class Student{
 	private:
-		char name[30];
+		string name;
 		int rollno;
 	
 	public:
-		void setdata(int rn, char *n);
+		void setdata(int rn, string n);
 		void getdata();
 };
 
-void Student::setdata(int rn, char *n){
+void Student::setdata(int rn, string n){
 	rollno = rn;
-	strcpy(name, n);
+	name = n;
 }
 
 void Student::getdata(){
@@ -25,6 +25,6 @@ void Student::getdata(){
 
 int main(){
 	Student steezy;
-	steezy.setdata(07, "Mouktik");
+	steezy.setdata(7, "Steezy");
 	steezy.getdata();
 }
